@@ -1,0 +1,7 @@
+﻿@* GeneratePrettyNames: true*@
+@model  Decision.ViewModel.Applicant.ApplicantListViewModel
+
+@foreach (var Applicant in Model.Applicants)
+{
+    @Html.Partial(MVC.Applicant.Views._ApplicantItem, Applicant)
+}
